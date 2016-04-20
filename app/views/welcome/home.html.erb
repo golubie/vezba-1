@@ -3,6 +3,8 @@
 </head>
 <div class="center jumbotron">
 	<h1>Golubie Software Solutions</h1>
-	<%= link_to "Sign up", "signup", class: "btn btn-primary btn-lg btn-xlarge", id: "signup" %>
-	<%= link_to "Login", "login", class: "btn btn-primary btn-lg btn-xlarge", id: "login" %>
+	<% if logged_in? %>
+		<%= link_to "Sign up", "signup", class: "btn btn-primary btn-lg btn-xlarge", id: "signup" %>
+		<%= link_to "Login", "login", class: "btn btn-primary btn-lg btn-xlarge", id: "login" %>
+	<% end %>
 </div>
