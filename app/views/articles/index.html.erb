@@ -1,5 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <h1 align="center">Listing Articles</h1>
-
-<%= render 'article', obj: @articles %>
+<div class="center">
+	<%= will_paginate %>
+</div>
+<div>
+	<%= render 'article', obj: @articles %>
+</div>
+<div class="center">
+	<%= will_paginate %>
+</div>
