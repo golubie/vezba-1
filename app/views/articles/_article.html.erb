@@ -25,8 +25,10 @@
     	</div>
     </div>
 <% end %>
-<div class="form-group">
-	<div class="col-sm-offset-2 col-sm-10">
-		<%= link_to 'New Article', new_article_path, class: "btn btn-primary btn-lg" %>
+<% if logged_in? %>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<%= link_to 'New Article', new_article_path, class: "btn btn-primary btn-lg" %>
+		</div>
 	</div>
-</div>
+<% end %>
